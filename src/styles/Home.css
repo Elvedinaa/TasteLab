@@ -1,0 +1,42 @@
+/* Style for the entire page */
+.home-container {
+  background-color: orange; /* Background color */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Style for the title */
+.title-container {
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.tastelab-title {
+  color: #fff; /* White color for TasteLab text */
+}
+
+/* Style for the Get Started button */
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #fff; /* White background for button */
+  color: orange; /* Orange text */
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #f0f0f0; /* Light grey background when hovered */
+}
