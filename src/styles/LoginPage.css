@@ -1,0 +1,140 @@
+/* General layout for login page */
+.login-page-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left side: Form */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add spacing between the navbar and the form */
+}
+
+.auth-nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #d59869;
+  color: #d59869;
+  border-radius: 5px 5px 0 0;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-nav-button:hover {
+  background-color: #d59869;
+  color: white;
+}
+
+.auth-nav-button.active {
+  background-color: #d59869;
+  color: white;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d59869;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #d59869;
+}
+
+/* Social Login Buttons */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.social-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-button.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.social-button.google:hover {
+  background-color: #c1351d;
+}
+
+.social-button.facebook {
+  background-color: #4267B2;
+  color: white;
+}
+
+.social-button.facebook:hover {
+  background-color: #365899;
+}
+
+/* Right side: Image */
+.login-right {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}

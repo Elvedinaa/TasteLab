@@ -1,0 +1,19 @@
+/* index.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background for the page */
+  }
+  
+  .text-[#f5d0a9] {
+    color: #f5d0a9; /* Nude color */
+  }
+  
+  .bg-orange-600 {
+    background-color: #ea580c; /* Orange button color */
+  }
+  
+  .bg-orange-700 {
+    background-color: #9b4d20; /* Darker orange for hover */
+  }
+  

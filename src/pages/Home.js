@@ -1,21 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
-import '../styles/Home.css';  // Import the CSS file
+import { useNavigate } from 'react-router-dom'; // Assuming you’re using React Router
+import '../styles/Home.css';
 
 function Home() {
-  return (
-    <div className="home-container">
-      {/* Title Section */}
-      <div className="title-container">
-        <h1 className="welcome-title">Welcome to <span className="tastelab-title">TasteLab</span></h1>
-      </div>
-      
-      {/* Call to Action Button */}
-      <Link to="/get-started">   {/* Link to the Get Started route */}
-        <button className="cta-btn">Get Started</button>
-      </Link>
-    </div>
-  );
+    const navigate = useNavigate();
+
+    return (
+        <div className="home-container">
+            <header className="home-header">
+                <h1>Welcome to TasteLab</h1>
+            </header>
+
+            <button 
+                className="cta-button" 
+                onClick={() => navigate('/login')}
+            >
+                Login/Sign Up
+            </button>
+        </div>
+    );
 }
 
 export default Home;

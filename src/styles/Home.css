@@ -1,40 +1,29 @@
 .home-container {
-  background-color: orange;
-  height: 100vh;
+  font-family: 'Georgia', serif; /* More elegant, cursive-like font */
+  background-color: #f0e6e6;  /* Soft nude with a hint of warmth */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.title-container {
-  text-align: center;
-  color: #fff; /* White text for contrast */
+.home-header {
+  background-color: transparent;  /* No distinct header background */
+  color: #eab697;  /* Darker warm brown for contrast */
 }
 
-.welcome-title {
+.home-header h1 {
+  margin: 0;
   font-size: 3rem;
-  font-weight: bold;
+  font-family: 'Dancing Script', cursive; /* Cursive effect */
 }
 
-.tastelab-title {
-  font-family: 'Dancing Script', cursive;  
-  font-size: 3.5rem;  
-  color: #ffd700; /* Golden color for a stylish touch */
-}
-
-.cta-btn {
+.auth-section {
+  background-color: #e8dcdc;  /* Slightly darker than the background */
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   margin-top: 20px;
-  background-color: #ff4500; /* Bright orange for the button */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
 }
 
-.cta-btn:hover {
-  background-color: #e03e00; /* Darker shade of orange for hover */
-}

@@ -1,21 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import GetStarted from './pages/GetStarted';
-import SignUp from './pages/SignUp';  // Import SignUp
+import Home from './pages/Home'; // Home page
+import LoginPage from './pages/LoginPage'; // LoginPage component
+import Wellness from './pages/Wellness'; // Wellness page
+import GroceryList from './pages/GroceryList'; // GroceryList page
+import Profile from './pages/Profile'; // Profile page
+import Recipes from './pages/Recipes'; // Recipe page
+import HomePage from './pages/HomePage'; // Import your HomePage component
 
 function App() {
   return (
     <Router>
-      <div className="bg-white-400 min-h-screen flex flex-col">
-        <main className="flex-grow flex justify-center items-center">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/get-started" element={<GetStarted />} />
-            <Route path="/signup" element={<SignUp />} />  {/* Add route for SignUp */}
-          </Routes>
-        </main>
-      </div>
+      <Routes>
+        {/* Define the routes for your app */}
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/wellness" element={<Wellness />} />
+        <Route path="/grocery-list" element={<GroceryList />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/recipes" element={<Recipes />} />
+        
+        {/* HomePage route */}
+        <Route path="/home-page" element={<HomePage />} />
+      </Routes>
     </Router>
   );
 }
